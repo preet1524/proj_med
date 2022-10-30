@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Prediction of House In Bengaluru City </title>
+</head>
+
+<style type="text/css">
+    title{
+        text-align: right;
+    }
+    lable{
+        width: 150px;
+        display: inline-block;
+        text-align: right;
+        margin: auto;
+        justify-content: center;
+    }
+</style>
+<body style="background-color: rgba(16, 156, 166, 0.651);" >
+    <h1> Bengaluru House Price Prediction</h1>
+    <form method="GET" action="/predict_charges">
+
+        <lable>Area Type:</lable>
+        <select name = "area_type">
+            <option value = "Built-up  Area">Built-up  Area</option>
+            <option value = "Carpet  Area">Carpet  Area</option>
+            <option value = "Plot  Area">Plot  Area</option>
+            <option value = "Super built-up  Area">Super built-up  Area</option>
+        </select>
+
+        <br>
+        <br>
+
+        <lable>Location:</lable>
+        <input type="text" name ="location">
+        </select>
+
+        <br>
+        <br>
+
+
+        <lable>Size:</lable>
+        <input type="text" name ="size">
+        </select>
+
+        <br>
+        <br>
+        
+
+        <lable>Bathroom:</lable>
+        <input type="text" name ="bath">
+        </select>
+
+        <br>
+        <br>
+        <lable>Balcony:</lable>
+        <input type="text" name ="balcony">
+        </select>
+
+        <br>
+        <br>
+    
+            
+    
+                       <input type="submit" value="SUBMIT">
+    
+    
+
+        </style>
+    
+        <br>
+        <p>Your House Price In Bengaluru City will be <b> {{ prediction }} /- Rs.</b> Only (Lakhs)</p>
+
+       
+
+        
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
